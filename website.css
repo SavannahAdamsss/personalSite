@@ -1,3 +1,7 @@
+@import url("website.learn2learn.css");
+@import url("goalsetting.css");
+@import url("meetup.css");
+
 body {
     height: 180VH;
     display: flex;
