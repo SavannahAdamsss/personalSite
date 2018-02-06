@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>PersonalWebsite</title>
-        <link rel="stylesheet" href="website.css">
-        <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
-    </head>
-        <body>
-            <header>
-                <div class="logo">
-                    <h2>Savannah Adams</h2>
-                    <h3>Remote Access</h3>
-                </div>
-                <div class="bar">
-                    <nav>
-                        <div class="words">
-                            <a href="website.learn2learn.html" style="text-decoration: none;">Learn to Learn</a>
-                            <a href="website.goalsetting.html">Goal Setting</a>
-                            <a href="website.meetup.html">Meet Ups</a>
-                        </div>
-                    </nav>
-                </div>
-            </header>
-            <main>
-                <section class="articles">
-                    <article>
-                        <h3>About Me</h3>
-                        <img class="wrap"src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/21767994_1907822699483038_8755995740852987772_n.jpg?oh=d0921c8717db2d26b63c7fea5bfa911a&oe=5AF063FC">
-                        <p>I am many things.  I am a middle child of seven from the Midwest.  I am a lifelong student, a puzzle solver, a story teller, and I am gifted with the ability to comfortably talk with anyone.  Aside from my family, my two most favorite things are language and travel.  I have studied four languages and have begun a fifth. Traveling has allowed me to explore my love of languages at a deeper level.  I love learning about cultures, and I love to hear the stories of others.  For the past year, I have had the privilege of traveling twenty-six countries while living out of a backpack.  Exploring so many different places and cultures has provided me a new perspective on humanity.  I find more beauty in the differences among humans.  I consider this a sort of salvation, and I wouldn't trade my experiences for anything.</p>
-                    </article>
-                    <article>
-                        <h3>Re-entry</h3>
-                        <img class="wrap"src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/19642407_1870709769860998_3212891332618544970_n.jpg?oh=92534c36b0d13923d87b7920a332924d&oe=5AE1ED65">
-                        <p>Now, I find myself in Denver working towards the title of Full Stack Web Developer.  After being on the move for so long, I find it difficult to stay put.  It took me some time to adjust to my new schedule.  So how can I be successful without some sort of tool to keep my mind focused on my new goal?  Fortunately, there are some simple tools that, if properly deployed, create a more organized and efficient me.  Taking a few minutes each morning to set the stage for my day allows me to time-manage with ease, accomplishing my goals with precision.  Goal setting is key in this process.  A list of attainable goals, creates a mindset of determination.  Be it daily, short-term goals or that goal off in the distance, checking off those to-do's brings pride and discipline, and when one is proud of the work being accomplished, procrastination doesn't stand a chance. </p>
-                    </article>
-                </section>
-            </main>
-            <footer>
-                <div class="copy">
-                    <p><small>&copy; 2018 - All rights reserved - Remote Access - Savannah Adams</small></p>
-                </div>
-            </footer>
-        </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.9.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.9.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.9.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.9.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.9.1/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
+      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+    </div>
+    <p id="load">Firebase SDK Loading&hellip;</p>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>
